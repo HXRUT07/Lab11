@@ -9,8 +9,35 @@ string cardNames[] = {"","A","2","3","4","5","6","7","8","9","10","J","Q","K"};
 int cardScores[] = {0,1,2,3,4,5,6,7,8,9,10,10,10,10};
 
 int drawCard(void){
-    int score = rand() % 13 + 1;
-    return score;
+	switch (rand()%13)
+	{
+	case 0:return 1;
+		break;
+	case 1:return 2;
+		break;
+	case 2:return 3;
+		break;
+	case 3:return 4;
+		break;
+	case 4:return 5;
+		break;
+	case 5:return 6;
+		break;
+	case 6:return 7;
+		break;
+	case 7:return 8;
+		break;
+	case 8:return 9;
+		break;
+	case 9:return 10;
+		break;
+	case 10:return 11;
+		break;
+	case 11:return 12;
+		break;
+	default:return 13;
+		break;
+	}
 }
 
 int calScore(int x,int y,int z){
